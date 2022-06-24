@@ -30,3 +30,6 @@ download
 package
 software
 .gitconfig
+.lesshst
+.zcompdump
+.zsh_history
