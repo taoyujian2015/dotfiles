@@ -31,8 +31,8 @@ set wildmenu
 " 不需要备份文件
 set nobackup
 " 主题
-set background=dark
-autocmd vimenter * colorscheme gruvbox
+" set background=dark
+" autocmd vimenter * colorscheme gruvbox
 "----vim 个人使用习惯配置end------
 "ssh 远程粘贴板
 if executable('clipboard-provider')

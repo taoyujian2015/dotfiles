@@ -22,7 +22,7 @@ local hotkeys_popup = require("awful.hotkeys_popup")
 require("awful.hotkeys_popup.keys")
 
 local docker_widget = require("awesome-wm-widgets.docker-widget.docker")
-local volume_widget = require("awesome-wm-widgets.volume-widget.utils")
+local volume_widget = require("awesome-wm-widgets.volume-widget.volume")
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
@@ -225,7 +225,7 @@ awful.screen.connect_for_each_screen(function(s)
 	    docker_widget(),
             --mykeyboardlayout,
             wibox.widget.systray(),
-	    volume_widget(),
+	    	--volume_widget(),
             mytextclock,
             --s.mylayoutbox,
         },

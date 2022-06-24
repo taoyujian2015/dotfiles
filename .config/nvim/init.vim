@@ -7,6 +7,7 @@ runtime ./vimrc.vim
 lua require('plugins')
 lua require('plugin-config/nvim-tree')
 lua require('plugin-config/telescope')
+lua require('lsp/setup')
 " 按键映射
 runtime ./maps.vim
 
