@@ -61,6 +61,7 @@ terminal = "st"
 
 --tyjian:rofi start command
 rofi_start = 'rofi -show combi'
+screenshot = 'flameshot gui'
 picom = "picom --experimental-backends -b" 
 
 awful.spawn.with_shell(picom)
@@ -270,6 +271,9 @@ awful.key({ modkey,}, "Return", function () awful.spawn(terminal) end, {descript
 
 --tyjian:<C-d> open rofi
 awful.key({ "Control",}, "d", function () awful.spawn(rofi_start) end, {description = "open a rofi", group = "launcher"}),
+
+--tyjian:<C-S>+a screenshot
+awful.key({ "Control","Shift"}, "a", function () awful.spawn(screenshot) end, {description = "screenshot", group = "launcher"}),
 
 awful.key({ modkey, "Control" }, "r", awesome.restart,
 {description = "reload awesome", group = "awesome"}),
@@ -510,9 +514,9 @@ client.connect_signal("request::titlebars", function(c)
 end)
 
 -- Enable sloppy focus, so that focus follows mouse.
-client.connect_signal("mouse::enter", function(c)
-    c:emit_signal("request::activate", "mouse_enter", {raise = false})
-end)
+--client.connect_signal("mouse::enter", function(c)
+--    c:emit_signal("request::activate", "mouse_enter", {raise = false})
+--end)
 
 client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)

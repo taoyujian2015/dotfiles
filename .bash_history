@@ -1,10 +1,3 @@
-lear
-clear
-sudo pacman -S 'JetBrainsMono Nerd Font'
-sudo pacman -S 'JetBrainsMono_Nerd_Font'
-sudo pacman -S 'JetBrainsMonoNerdFont'
-yay -S nerd-fonts-jetbrains-mono
-clear
 zsh
 ls
 cd down
@@ -498,3 +491,10 @@ startx
 startx
 startx
 sudo reboot 
+ls
+ls
+clear
+ls
+ls -la
+cd ..
+zsh

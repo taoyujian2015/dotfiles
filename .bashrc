@@ -13,5 +13,5 @@ alias ls='ls --color=auto'
 
 PS1='[\u@\h \W]\$ '
 
-export IDEA_HOME="$HOME/sofrware/idea-IU-221.5787.30"
-export PATH=:$PATH:${IDEA_HOME}/bin
+#export IDEA_HOME="$HOME/sofrware/idea-IU-221.5787.30"
+#export PATH=:$PATH:${IDEA_HOME}/bin

@@ -19,5 +19,15 @@ HISTFILE="$HOME/.zsh_history"
 HISTSIZE=10000
 SAVEHIST=10000
 
-export IDEA_HOME="$HOME/software/idea-IU-221.5787.30"
+export IDEA_HOME="/opt/software/idea-IU"
 export PATH=:$PATH:${IDEA_HOME}/bin
+
+alias digfactory="cd ~/code/digitalfactory/Trunk/code"
+
+if [ -x /usr/bin/dircolors ]; then
+	test -r /home/tyjian/.zsh/.dircolors && eval "$(dircolors -b /home/tyjian/.zsh/.dircolors)" || eval "$(dircolors -b)"
+	alias grep='grep --color=auto'
+	alias egrep='egrep --color=auto'
+	alias fgrep='fgrep --color=auto'
+	alias ls='ls --color=auto'
+fi
